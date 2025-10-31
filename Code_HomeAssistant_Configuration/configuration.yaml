@@ -1,0 +1,458 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+
+# Creación de calendarios para consultas del consumo eléctrico nodo1_1 y nodo1_2
+
+# Dispositivo 1
+input_datetime:
+
+  calendario_nodo1_1_t1:
+    name: "Calendario nodo1_1_t1"
+    has_date: true
+    has_time: false
+
+  calendario_nodo1_1_t2:
+    name: "Calendario nodo1_1_t2"
+    has_date: true
+    has_time: false
+
+  calendario_nodo1_2_t1:
+    name: "Calendario nodo1_2_t1"
+    has_date: true
+    has_time: false
+
+  calendario_nodo1_2_t2:
+    name: "Calendario nodo1_2_t2"
+    has_date: true
+    has_time: false
+
+  calendario_nodo2_p1:
+    name: "Calendario nodo2_p1"
+    has_date: true
+    has_time: false
+    
+  calendario_nodo2_p2:
+    name: "Calendario nodo2_p2"
+    has_date: true
+    has_time: false
+
+  calendario_nodo2_ce_total:
+    name: "Calendario nodo2_ce_total"
+    has_date: true
+    has_time: false
+  
+  calendario_nodo2_cet_fechai:
+    name: "Calendario nodo2_cet_fechai"
+    has_date: true
+    has_time: false
+    
+  calendario_nodo2_cet_fechaf:
+    name: "Calendario nodo2_cet_fechaf"
+    has_date: true
+    has_time: false  
+
+
+    
+# Creacion de Botones para las Consultas de Consumo Electricos
+input_button:
+
+  enviar_fecha_nodo1_1_t1:
+    name: Enviar Fecha Nodo1_1_t1
+    
+  enviar_fecha_nodo1_1_t2:
+    name: Enviar Fecha Nodo1_1_t2
+
+  enviar_fecha_nodo1_2_t1:
+    name: Enviar Fecha Nodo1_2_t1
+    
+  enviar_fecha_nodo1_2_t2:
+    name: Enviar Fecha Nodo1_2_t2
+
+  enviar_fecha_nodo2_p1:
+    name: Enviar Fecha Nodo2_p1
+
+  enviar_fecha_nodo2_p2:
+    name: Enviar Fecha Nodo2_p2
+    
+  enviar_fecha_nodo2_ce_total:
+    name: Enviar Fecha Nodo2_ce_total
+    
+  enviar_fecha_nodo2_cet_rangos:
+    name: Enviar Fecha Nodo2_cet_rangos
+
+# Creacion de Entrada para Valores de Pontencia Nomimal
+
+input_number:
+#Dispositivo 1
+  potencia_nominal_nodo1_1_t1:
+    name: Potencia Nominal Nodo1_1_t1
+    min: 0
+    max: 1000
+    step: 0.5  # Permite ingresar valores decimales
+    unit_of_measurement: "W"
+    mode: box
+
+#Dispositivo 2
+  potencia_nominal_nodo1_1_t2:
+    name: Potencia Nominal Nodo1_1_t2
+    min: 0
+    max: 1000
+    step: 0.5  # Permite ingresar valores decimales
+    unit_of_measurement: "W"
+    mode: box
+    
+#Dispositivo 3
+  potencia_nominal_nodo1_2_t1:
+    name: Potencia Nominal Nodo1_2_t1
+    min: 0
+    max: 1000
+    step: 0.5  # Permite ingresar valores decimales
+    unit_of_measurement: "W"
+    mode: box
+    
+#Dispositivo 4
+  potencia_nominal_nodo1_2_t2:
+    name: Potencia Nominal Nodo1_2_t2
+    min: 0
+    max: 1000
+    step: 0.5  # Permite ingresar valores decimales
+    unit_of_measurement: "W"
+    mode: box
+
+mqtt:
+
+# Creacion de Sensores MQTT para recibir mensajes a traves de topicos de variables electricas
+
+    sensor:
+    
+#Dispositivo 1 
+    - name: "Voltaje Nodo1_1 Tomacorriente 1"
+      state_topic: "nodo1_1/t1/voltaje"
+      qos: 0
+      unit_of_measurement: "V"
+      
+    - name: "Corriente Nodo1_1 Tomacorriente 1"
+      state_topic: "nodo1_1/t1/corriente"
+      qos: 0
+      unit_of_measurement: "A"
+      
+    - name: "Potencia Nodo1_1 Tomacorriente 1"
+      state_topic: "nodo1_1/t1/potencia"
+      qos: 0
+      unit_of_measurement: "W"   
+      
+    - name: "Consumo_E Nodo1_1 Tomacorriente 1"
+      state_topic: "nodo1_1/t1/consumo"
+      qos: 0
+      unit_of_measurement: "kWh"
+      
+#Dispositivo 2      
+    - name: "Voltaje Nodo1_1 Tomacorriente 2"
+      state_topic: "nodo1_1/t2/voltaje"
+      qos: 0
+      unit_of_measurement: "V"
+      
+    - name: "Corriente Nodo1_1 Tomacorriente 2"
+      state_topic: "nodo1_1/t2/corriente"
+      qos: 0
+      unit_of_measurement: "A"
+      
+    - name: "Potencia Nodo1_1 Tomacorriente 2"
+      state_topic: "nodo1_1/t2/potencia"
+      qos: 0
+      unit_of_measurement: "W"
+      
+    - name: "Consumo_E Nodo1_1 Tomacorriente 2"
+      state_topic: "nodo1_1/t2/consumo"
+      qos: 0
+      unit_of_measurement: "kWh"
+      
+#Dispositivo 3 
+    - name: "Voltaje Nodo1_2 Tomacorriente 1"
+      state_topic: "nodo1_2/t1/voltaje"
+      qos: 0
+      unit_of_measurement: "V"
+      
+    - name: "Corriente Nodo1_2 Tomacorriente 1"
+      state_topic: "nodo1_2/t1/corriente"
+      qos: 0
+      unit_of_measurement: "A"
+      
+    - name: "Potencia Nodo1_2 Tomacorriente 1"
+      state_topic: "nodo1_2/t1/potencia"
+      qos: 0
+      unit_of_measurement: "W"   
+      
+    - name: "Consumo_E Nodo1_2 Tomacorriente 1"
+      state_topic: "nodo1_2/t1/consumo"
+      qos: 0
+      unit_of_measurement: "kWh"
+      
+#Dispositivo 4      
+    - name: "Voltaje Nodo1_2 Tomacorriente 2"
+      state_topic: "nodo1_2/t2/voltaje"
+      qos: 0
+      unit_of_measurement: "V"
+      
+    - name: "Corriente Nodo1_2 Tomacorriente 2"
+      state_topic: "nodo1_2/t2/corriente"
+      qos: 0
+      unit_of_measurement: "A"
+      
+    - name: "Potencia Nodo1_2 Tomacorriente 2"
+      state_topic: "nodo1_2/t2/potencia"
+      qos: 0
+      unit_of_measurement: "W"
+      
+    - name: "Consumo_E Nodo1_2 Tomacorriente 2"
+      state_topic: "nodo1_2/t2/consumo"
+      qos: 0 
+      unit_of_measurement: "kWh"
+
+
+#Smart Meter
+
+# Fase 1
+
+    - name: "Voltaje Fase 1 TDE"
+      state_topic: "nodo2/p1/voltaje"
+      qos: 0
+      unit_of_measurement: "V"
+      
+    - name: "Corriente Fase 1 TDE"
+      state_topic: "nodo2/p1/corriente"
+      qos: 0
+      unit_of_measurement: "A"
+      
+    - name: "Potencia Fase 1 TDE"
+      state_topic: "nodo2/p1/potencia"
+      qos: 0
+      unit_of_measurement: "Watts"
+      
+    - name: "Consumo_E Fase 1 TDE"
+      state_topic: "nodo2/p1/consumo"
+      qos: 0  
+      unit_of_measurement: "kWh"
+      
+# Fase 2
+
+    - name: "Voltaje Fase 2 TDE"
+      state_topic: "nodo2/p2/voltaje"
+      qos: 0
+      unit_of_measurement: "V"
+      
+    - name: "Corriente Fase 2 TDE"
+      state_topic: "nodo2/p2/corriente"
+      qos: 0
+      unit_of_measurement: "A"
+      
+    - name: "Potencia Fase 2 TDE"
+      state_topic: "nodo2/p2/potencia"
+      qos: 0
+      unit_of_measurement: "Watts"  
+      
+    - name: "Consumo_E Fase 2 TDE"
+      state_topic: "nodo2/p2/consumo"
+      qos: 0  
+      unit_of_measurement: "kWh"
+      
+# Consumo Electrico Total  
+
+    - name: "Consumo Electrico Total"
+      state_topic: "nodo2/consumoe_total"
+      qos: 0  
+      unit_of_measurement: "kWh"   
+      
+# Consumo Electrico total Mes actual
+
+    - name: "Consumo Electrico Total Mes Actual "
+      state_topic: "nodo2/consumoe_total/mesActual"
+      qos: 0  
+      unit_of_measurement: "kWh" 
+
+# Consumo Electrico Fase 1 Mes actual
+
+    - name: "Consumo Electrico Fase 1 Mes Actual "
+      state_topic: "nodo2/p1/consumoActual"
+      qos: 0  
+      unit_of_measurement: "kWh" 
+      
+# Consumo Electrico Fase 2 Mes actual
+
+    - name: "Consumo Electrico Fase 2 Mes Actual "
+      state_topic: "nodo2/p2/consumoActual"
+      qos: 0  
+      unit_of_measurement: "kWh" 
+
+# Creacion de sensors MQTT con los valores del consumo eléctrico de consulta
+
+    - name: "Consumo Electrico Diario Nodo1_1_t1"
+      state_topic: "respuesta/consumoE_diario/nodo1_1_t1"
+      qos: 0
+      unit_of_measurement: "kWh" 
+
+    - name: "Consumo Electrico Diario Nodo1_1_t2"
+      state_topic: "respuesta/consumoE_diario/nodo1_1_t2"
+      qos: 0
+      unit_of_measurement: "kWh" 
+      
+    - name: "Consumo Electrico Diario Nodo1_2_t1"
+      state_topic: "respuesta/consumoE_diario/nodo1_2_t1"
+      qos: 0
+      unit_of_measurement: "kWh" 
+      
+    - name: "Consumo Electrico Diario Nodo1_2_t2"
+      state_topic: "respuesta/consumoE_diario/nodo1_2_t2"
+      qos: 0
+      unit_of_measurement: "kWh" 
+      
+    - name: "Consumo Electrico Diario Nodo2_p1"
+      state_topic: "respuesta/consumoE_diario/nodo2_p1"
+      qos: 0
+      unit_of_measurement: "kWh" 
+      
+    - name: "Consumo Electrico Diario Nodo2_p2"
+      state_topic: "respuesta/consumoE_diario/nodo2_p2"
+      qos: 0
+      unit_of_measurement: "kWh" 
+      
+    - name: "Consumo Electrico Diario Nodo2_ce_total"
+      state_topic: "respuesta/consumoE_diario/nodo2_ce_total"
+      qos: 0
+      unit_of_measurement: "kWh" 
+      
+    - name: "Consumo Electrico por Rangos Nodo2"
+      state_topic: "respuesta/consumoE_rangos/nodo2_ce_total"
+      qos: 0
+      unit_of_measurement: "kWh"             
+      
+# Creacion de Switches MQTT para envio de acciones On / Off
+
+    switch:
+    
+# Dispositivo 1
+
+    - name: "On/Off Nodo1_1 Tomacorriente 1"
+      state_topic: "nodo1_1/t1/relay"
+      command_topic: "nodo1_1/t1/relay"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+
+# Dispositivo 2      
+    - name: "On/Off Nodo1_1 Tomacorriente 2"
+      state_topic: "nodo1_1/t2/relay"
+      command_topic: "nodo1_1/t2/relay"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+      
+# Dispositivo 3
+
+    - name: "On/Off Nodo1_2 Tomacorriente 1"
+      state_topic: "nodo1_2/t1/relay"
+      command_topic: "nodo1_2/t1/relay"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+
+# Dispositivo 4      
+    - name: "On/Off Nodo1_2 Tomacorriente 2"
+      state_topic: "nodo1_2/t2/relay"
+      command_topic: "nodo1_2/t2/relay"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"  
+      
+      
+# Smart Meter
+# Control de Circuitos Electricos del Tablero de Distribución Eléctrica
+
+    - name: "On/Off Circuito Iluminacion "
+      state_topic: "nodo2/c1/ssr1"
+      command_topic: "nodo2/c1/ssr1"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+
+    - name: "On/Off Circuito Tomacorrientes"
+      state_topic: "nodo2/c2/ssr2"
+      command_topic: "nodo2/c2/ssr2"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+
+    - name: "On/Off Circuito Carga Especial 1"
+      state_topic: "nodo2/c3/ssr3"
+      command_topic: "nodo2/c3/ssr3"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+
+    - name: "On/Off Circuito Carga Especial 2"
+      state_topic: "nodo2/c4/ssr4"
+      command_topic: "nodo2/c4/ssr4"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+      
+# Switches que se encargan de Informar el Estado de Conexion de Nodos 
+
+# Nodo1_1
+
+    - name: "Estado de Activacion del Nodo1_1"
+      state_topic: "nodo1_1/estado"
+      command_topic: "nodo1_1/estado"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+      
+    - name: "Estado Periodico de Activacion del Nodo1_1"
+      state_topic: "nodo1_1/estadoPeriodo"
+      command_topic: "nodo1_1/estadoPeriodo"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+      
+# Nodo1_2
+
+    - name: "Estado de Activacion del Nodo1_2"
+      state_topic: "nodo1_2/estado"
+      command_topic: "nodo1_2/estado"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+      
+    - name: "Estado Periodico de Activacion del Nodo1_2"
+      state_topic: "nodo1_2/estadoPeriodo"
+      command_topic: "nodo1_2/estadoPeriodo"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+      
+# Nodo2
+
+    - name: "Estado de Activacion del Nodo2"
+      state_topic: "nodo2/estado"
+      command_topic: "nodo2/estado"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+      
+    - name: "Estado Periodico de Activacion del Nodo2"
+      state_topic: "nodo2/estadoPeriodo"
+      command_topic: "nodo2/estadoPeriodo"
+      value_template: "{{ value }}"
+      payload_on: "On"
+      payload_off: "Off"
+      
+

@@ -1,0 +1,296 @@
+- alias: Enviar fecha seleccionada nodo1_1_t1 por MQTT al presionar el botón
+  trigger:
+    platform: state
+    entity_id: input_button.enviar_fecha_nodo1_1_t1
+  action:
+  - service: mqtt.publish
+    data:
+      topic: calendario/fecha/nodo1_1_t1
+      payload: '{{ states(''input_datetime.calendario_nodo1_1_t1'') }}'
+  - service: persistent_notification.create
+    data:
+      message: 'Fecha enviada: {{ states(''input_datetime.calendario_nodo1_1_t1'')
+        }}'
+      title: Fecha Enviada
+  - service: input_button.press
+    target:
+      entity_id: input_button.enviar_fecha_nodo1_1_t1
+  id: b7fa5204846b4164b4939dd99c668d73
+- alias: Enviar fecha seleccionada nodo1_1_t2 por MQTT al presionar el botón
+  trigger:
+    platform: state
+    entity_id: input_button.enviar_fecha_nodo1_1_t2
+  action:
+  - service: mqtt.publish
+    data:
+      topic: calendario/fecha/nodo1_1_t2
+      payload: '{{ states(''input_datetime.calendario_nodo1_1_t2'') }}'
+  - service: persistent_notification.create
+    data:
+      message: 'Fecha enviada: {{ states(''input_datetime.calendario_nodo1_1_t2'')
+        }}'
+      title: Fecha Enviada
+  - service: input_button.press
+    target:
+      entity_id: input_button.enviar_fecha_nodo1_1_t2
+  id: 4ef8a1ec38e540d091d6e8ac987b7986
+- alias: Enviar fecha seleccionada nodo1_2_t1 por MQTT al presionar el botón
+  trigger:
+    platform: state
+    entity_id: input_button.enviar_fecha_nodo1_2_t1
+  action:
+  - service: mqtt.publish
+    data:
+      topic: calendario/fecha/nodo1_2_t1
+      payload: '{{ states(''input_datetime.calendario_nodo1_2_t1'') }}'
+  - service: persistent_notification.create
+    data:
+      message: 'Fecha enviada: {{ states(''input_datetime.calendario_nodo1_2_t1'')
+        }}'
+      title: Fecha Enviada
+  - service: input_button.press
+    target:
+      entity_id: input_button.enviar_fecha_nodo1_2_t1
+  id: e3bfc2a77c464f3284e46f70254d789e
+- alias: Enviar fecha seleccionada nodo1_2_t2 por MQTT al presionar el botón
+  trigger:
+    platform: state
+    entity_id: input_button.enviar_fecha_nodo1_2_t2
+  action:
+  - service: mqtt.publish
+    data:
+      topic: calendario/fecha/nodo1_2_t2
+      payload: '{{ states(''input_datetime.calendario_nodo1_2_t2'') }}'
+  - service: persistent_notification.create
+    data:
+      message: 'Fecha enviada: {{ states(''input_datetime.calendario_nodo1_2_t2'')
+        }}'
+      title: Fecha Enviada
+  - service: input_button.press
+    target:
+      entity_id: input_button.enviar_fecha_nodo1_2_t2
+  id: 7516ef5cb3a54e2e87cb518dcd32ad62
+- alias: Enviar fecha seleccionada nodo2_p1 por MQTT al presionar el botón
+  trigger:
+    platform: state
+    entity_id: input_button.enviar_fecha_nodo2_p1
+  action:
+  - service: mqtt.publish
+    data:
+      topic: calendario/fecha/nodo2_p1
+      payload: '{{ states(''input_datetime.calendario_nodo2_p1'') }}'
+  - service: persistent_notification.create
+    data:
+      message: 'Fecha enviada: {{ states(''input_datetime.calendario_nodo2_p1'') }}'
+      title: Fecha Enviada
+  - service: input_button.press
+    target:
+      entity_id: input_button.enviar_fecha_nodo2_p1
+  id: 7cd8d69fd0f04b1a8c8aa8b20cc42623
+- alias: Enviar fecha seleccionada nodo2_p2 por MQTT al presionar el botón
+  trigger:
+    platform: state
+    entity_id: input_button.enviar_fecha_nodo2_p2
+  action:
+  - service: mqtt.publish
+    data:
+      topic: calendario/fecha/nodo2_p2
+      payload: '{{ states(''input_datetime.calendario_nodo2_p2'') }}'
+  - service: persistent_notification.create
+    data:
+      message: 'Fecha enviada: {{ states(''input_datetime.calendario_nodo2_p2'') }}'
+      title: Fecha Enviada
+  - service: input_button.press
+    target:
+      entity_id: input_button.enviar_fecha_nodo2_p2
+  id: dbaca57c75d74765ad7877b52f577e78
+- alias: Enviar fecha seleccionada nodo2_ce_total por MQTT al presionar el botón
+  trigger:
+    platform: state
+    entity_id: input_button.enviar_fecha_nodo2_ce_total
+  action:
+  - service: mqtt.publish
+    data:
+      topic: calendario/fecha/nodo2_ce_total
+      payload: '{{ states(''input_datetime.calendario_nodo2_ce_total'') }}'
+  - service: persistent_notification.create
+    data:
+      message: 'Fecha enviada: {{ states(''input_datetime.calendario_nodo2_ce_total'')
+        }}'
+      title: Fecha Enviada
+  - service: input_button.press
+    target:
+      entity_id: input_button.enviar_fecha_nodo2_ce_total
+  id: db79f4f418cc457780bc3dbeecb5d521
+- alias: Enviar fecha seleccionada nodo2_cet_rangos por MQTT al presionar el botón
+  trigger:
+    platform: state
+    entity_id: input_button.enviar_fecha_nodo2_cet_rangos
+  action:
+  - service: mqtt.publish
+    data:
+      topic: calendario/fecha/nodo2_cet_fechaI
+      payload: '{{ states(''input_datetime.calendario_nodo2_cet_fechai'') }}'
+  - service: mqtt.publish
+    data:
+      topic: calendario/fecha/nodo2_cet_fechaF
+      payload: '{{ states(''input_datetime.calendario_nodo2_cet_fechaf'') }}'
+  - service: persistent_notification.create
+    data:
+      message: 'Fecha de inicio: {{ states(''input_datetime.calendario_nodo2_cet_fechai'')}}
+        y de Fin: {{ states(''input_datetime.calendario_nodo2_cet_fechaf'')}}'
+      title: Fecha Enviada
+  - service: input_button.press
+    target:
+      entity_id: input_button.enviar_fecha_nodo2_cet_rangos
+  id: 5c3cda7c22f3484191cf8facbc1ef2d8
+- id: '1723244260483'
+  alias: Alarma Nodo1_1_t2
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.on_off_nodo1_1_tomacorriente_2
+    from: 'off'
+    to: 'on'
+    for:
+      hours: '{{ states(''input_number.tiempo_on_nodo1_1_t2'') }}'
+      minutes: 0
+      seconds: 0
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: ¡ATENCIÓN! Se ha excedido el tiempo de encendido configurado para la
+        Lavadora
+      title: Consumo Eléctrico Inusual
+  mode: single
+- id: '1723652950181'
+  alias: Alarma Nodo1_2_t2
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.on_off_nodo1_2_tomacorriente_2
+    from: 'off'
+    to: 'on'
+    for:
+      hours: '{{ states(''input_number.tiempo_on_nodo1_2_t2'') }}'
+      minutes: 0
+      seconds: 0
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: ¡ATENCIÓN! Se ha excedido el tiempo de encendido configurado para el
+        Equipo de Sonido
+      title: Consumo Eléctrico Inusual
+  mode: single
+- id: '1723653699156'
+  alias: Alarma Nodo1_2_t1
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.on_off_nodo1_2_tomacorriente_1
+    from: 'off'
+    to: 'on'
+    for:
+      hours: '{{ states(''input_number.tiempo_on_nodo1_2_t1'') }}'
+      minutes: 0
+      seconds: 0
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: ¡ATENCIÓN! Se ha excedido el tiempo de encendido configurado para el
+        Televisor
+      title: Consumo Eléctrico Inusual
+  mode: single
+- id: '1723694973986'
+  alias: Nueva automatización
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id:
+    - sensor.voltaje_fase_1_tde
+    above: 10.1
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: a
+  mode: single
+- id: '1724735132128'
+  alias: Alerta Potencia Nominal Nodo1_1_t2
+  description: ''
+  trigger:
+  - platform: mqtt
+    topic: nodo1_1/t2/potencia
+  condition:
+  - condition: template
+    value_template: '{{ trigger.payload | float > states(''input_number.potencia_nominal_nodo1_1_t2'')
+      | float }}
+
+      '
+  action:
+  - service: notify.notify
+    data:
+      title: 'Consumo Eléctrico Inusual '
+      message: '!Atención! Se ha excedido el valor de la Potencia Nominal de la Lavadora'
+  mode: single
+- id: '1724735192933'
+  alias: Alerta Potencia Nominal Nodo1_2_t1
+  description: ''
+  trigger:
+  - platform: mqtt
+    topic: nodo1_2/t1/potencia
+  condition:
+  - condition: template
+    value_template: '{{ trigger.payload | float > states(''input_number.potencia_nominal_nodo1_2_t1'')
+      | float }}
+
+      '
+  action:
+  - service: notify.notify
+    data:
+      title: 'Consumo Eléctrico Inusual '
+      message: '!Atención! Se ha excedido el valor de la Potencia Nominal del Televisor'
+  mode: single
+- id: '1724735243636'
+  alias: Alerta Potencia Nominal Nodo1_2_t2
+  description: ''
+  trigger:
+  - platform: mqtt
+    topic: nodo1_2/t2/potencia
+  condition:
+  - condition: template
+    value_template: '{{ trigger.payload | float > states(''input_number.potencia_nominal_nodo1_2_t2'')
+      | float }}
+
+      '
+  action:
+  - service: notify.notify
+    data:
+      title: 'Consumo Eléctrico Inusual '
+      message: '!Atención! Se ha excedido el valor de la Potencia Nominal del Equipo
+        de Sonido'
+  mode: single
+- id: '1731965752417'
+  alias: Alerta Potencia Nominal Nodo1_1_t1
+  description: ''
+  trigger:
+  - platform: mqtt
+    topic: nodo1_1/t1/potencia
+  condition:
+  - condition: template
+    value_template: '{{ trigger.payload | float > states(''input_number.potencia_nominal_nodo1_1_t1'')
+      | float }}
+
+      '
+  action:
+  - service: notify.notify
+    data:
+      title: 'Consumo Eléctrico Inusual '
+      message: '!Atención! Se ha excedido el valor de la Potencia Nominal del Refrigerador'
+  mode: single
