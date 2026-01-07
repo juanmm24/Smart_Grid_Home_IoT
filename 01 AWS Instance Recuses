@@ -1,0 +1,26 @@
+*** Instance Resources for AWS *** 
+
+The instance in Amazon Web Services should be created according to the following steps and certain features
+
+1) Create an account on AWS
+2) Create an instance on AWS according to the following characteristics:
+  The instance in Amazon Web Services that hosts the services of: 
+  Mosquitto MQTT, InfluxDB, Home Assistant and Node-RED, 
+  must contain the following requirements:
+  -- Operative System --
+  * Debian 12 (x86_64) 
+  -- Instance Type --
+  * t3. medium (2 vCPU and 4 GiB Memory)
+  -- RAM Memory --
+  * 4 GiB Memory
+  -- Storage --
+  * 40 GiB
+3) It is recommended to create a key pair for access to the AWS instance, using the Putty tool
+
+
+Note: Once the instance is created, it's time to install the Mosquitto MQTT, InfluxDB, Node-RED and Home Assistant services. 
+      This process is described in the file "02 Service Deployment.main"
+
+
+
+
