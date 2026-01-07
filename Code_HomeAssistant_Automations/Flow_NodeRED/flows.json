@@ -1,0 +1,3849 @@
+[
+    {
+        "id": "d17f046cca3de775",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2fd4b203d3410904",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t1/voltaje",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "b244112068eb3e19"
+            ]
+        ]
+    },
+    {
+        "id": "f32795d7697ffd3b",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t1/corriente",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "2599d77d9824f4c1"
+            ]
+        ]
+    },
+    {
+        "id": "db5e5dab52ea7693",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t1/potencia",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 240,
+        "wires": [
+            [
+                "557edf183b4cff56"
+            ]
+        ]
+    },
+    {
+        "id": "9b75c54e98b2e333",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t1/consumo",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "d035a31410fe6c0b"
+            ]
+        ]
+    },
+    {
+        "id": "b1e463a2b2dcf24d",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t2/voltaje",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "fd9483b5a4bc5033"
+            ]
+        ]
+    },
+    {
+        "id": "14b99752312f5c76",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t2/corriente",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "80ac5058650d2338"
+            ]
+        ]
+    },
+    {
+        "id": "e70f6b28a1dd3aef",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t2/potencia",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 600,
+        "wires": [
+            [
+                "d45eb216f6ef8d78"
+            ]
+        ]
+    },
+    {
+        "id": "0bc8d5c442d83aa0",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t2/consumo",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 680,
+        "wires": [
+            [
+                "e4fc76da75654a3e"
+            ]
+        ]
+    },
+    {
+        "id": "4ac9d17250d1d1b7",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t1/voltaje",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 80,
+        "wires": [
+            [
+                "1962613ba39a91d0"
+            ]
+        ]
+    },
+    {
+        "id": "712b843b36f21fc8",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t1/corriente",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 160,
+        "wires": [
+            [
+                "6e5dee65eb73de4a"
+            ]
+        ]
+    },
+    {
+        "id": "2df3cfd72dc77b02",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t1/potencia",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 240,
+        "wires": [
+            [
+                "18dd9e9a0cad53e1"
+            ]
+        ]
+    },
+    {
+        "id": "424dcc320fa2912b",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t1/consumo",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 940,
+        "y": 320,
+        "wires": [
+            [
+                "f16eac0b2cec7a2a"
+            ]
+        ]
+    },
+    {
+        "id": "a5aa80ad992f474d",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t2/voltaje",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 440,
+        "wires": [
+            [
+                "1c83e00b0c36d0d7"
+            ]
+        ]
+    },
+    {
+        "id": "0918c6b4ec8b129f",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t2/corriente",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 520,
+        "wires": [
+            [
+                "5960647256066541"
+            ]
+        ]
+    },
+    {
+        "id": "730031de09b29ad3",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t2/potencia",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 600,
+        "wires": [
+            [
+                "dc164d3c0937d1a0"
+            ]
+        ]
+    },
+    {
+        "id": "2e41571eee72b450",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t2/consumo",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 940,
+        "y": 680,
+        "wires": [
+            [
+                "30f23d9af77cbd3a"
+            ]
+        ]
+    },
+    {
+        "id": "b244112068eb3e19",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion voltaje",
+        "func": "msg.payload = [\n    { voltaje: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_1\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 80,
+        "wires": [
+            [
+                "84ea5a7dd72a6439"
+            ]
+        ]
+    },
+    {
+        "id": "2599d77d9824f4c1",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion corriente",
+        "func": "msg.payload = [\n    { corriente: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_1\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 160,
+        "wires": [
+            [
+                "39146403a437c381"
+            ]
+        ]
+    },
+    {
+        "id": "557edf183b4cff56",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion potencia",
+        "func": "msg.payload = [\n    { potencia: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_1\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "a8a5c467395685f0"
+            ]
+        ]
+    },
+    {
+        "id": "d035a31410fe6c0b",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion consumo",
+        "func": "msg.payload = [\n    { consumo: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_1\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "35911ccd6856adf6"
+            ]
+        ]
+    },
+    {
+        "id": "fd9483b5a4bc5033",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion voltaje",
+        "func": "msg.payload = [\n    { voltaje: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_2\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 440,
+        "wires": [
+            [
+                "a2b3850b40d6b509"
+            ]
+        ]
+    },
+    {
+        "id": "80ac5058650d2338",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion corriente",
+        "func": "msg.payload = [\n    { corriente: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_2\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 520,
+        "wires": [
+            [
+                "38946502230fe254"
+            ]
+        ]
+    },
+    {
+        "id": "d45eb216f6ef8d78",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion potencia",
+        "func": "msg.payload = [\n    { potencia: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_2\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 600,
+        "wires": [
+            [
+                "7d2063e6d79c133f"
+            ]
+        ]
+    },
+    {
+        "id": "e4fc76da75654a3e",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion consumo",
+        "func": "msg.payload = [\n    { consumo: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_2\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 680,
+        "wires": [
+            [
+                "876142984cef3390"
+            ]
+        ]
+    },
+    {
+        "id": "1962613ba39a91d0",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion voltaje",
+        "func": "msg.payload = [\n    { voltaje: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_3\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 80,
+        "wires": [
+            [
+                "64063136573fed01"
+            ]
+        ]
+    },
+    {
+        "id": "6e5dee65eb73de4a",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion corriente",
+        "func": "msg.payload = [\n    { corriente: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_3\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 160,
+        "wires": [
+            [
+                "a358c4bbe09f5293"
+            ]
+        ]
+    },
+    {
+        "id": "18dd9e9a0cad53e1",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion potencia",
+        "func": "msg.payload = [\n    { potencia: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_3\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 240,
+        "wires": [
+            [
+                "e59c18bbe300c412"
+            ]
+        ]
+    },
+    {
+        "id": "f16eac0b2cec7a2a",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion consumo",
+        "func": "msg.payload = [\n    { consumo: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_3\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 320,
+        "wires": [
+            [
+                "1380153ca8514553"
+            ]
+        ]
+    },
+    {
+        "id": "1c83e00b0c36d0d7",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion voltaje",
+        "func": "msg.payload = [\n    { voltaje: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_4\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 440,
+        "wires": [
+            [
+                "1b862bbd51ccb78d"
+            ]
+        ]
+    },
+    {
+        "id": "5960647256066541",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion corriente",
+        "func": "msg.payload = [\n    { corriente: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_4\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 520,
+        "wires": [
+            [
+                "ab4f030469767f78"
+            ]
+        ]
+    },
+    {
+        "id": "dc164d3c0937d1a0",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion potencia",
+        "func": "msg.payload = [\n    { potencia: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_4\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 600,
+        "wires": [
+            [
+                "340adedcc9f17ffe"
+            ]
+        ]
+    },
+    {
+        "id": "30f23d9af77cbd3a",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion consumo",
+        "func": "msg.payload = [\n    { consumo: parseFloat(msg.payload) },\n    { id_nodo: \"nodo1_4\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 680,
+        "wires": [
+            [
+                "640f14797a70148a"
+            ]
+        ]
+    },
+    {
+        "id": "84ea5a7dd72a6439",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 610,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "39146403a437c381",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 610,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a8a5c467395685f0",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 610,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "35911ccd6856adf6",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 610,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a2b3850b40d6b509",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 610,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "38946502230fe254",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 610,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7d2063e6d79c133f",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 610,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "876142984cef3390",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 630,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "64063136573fed01",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1390,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a358c4bbe09f5293",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1390,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e59c18bbe300c412",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1390,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1380153ca8514553",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1390,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1b862bbd51ccb78d",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1390,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "ab4f030469767f78",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1390,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "340adedcc9f17ffe",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1390,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "640f14797a70148a",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "enchufes",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1390,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "e0fab84e7ecd00c0",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/consumoe_total",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 1160,
+        "wires": [
+            [
+                "060c3ff36b42691f"
+            ]
+        ]
+    },
+    {
+        "id": "5475eb4306172cf1",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/resetE",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 930,
+        "y": 3800,
+        "wires": []
+    },
+    {
+        "id": "e6d36345d50230c6",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "On",
+        "payloadType": "str",
+        "x": 750,
+        "y": 3800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6752562b366625f",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/p1/voltaje",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 820,
+        "wires": [
+            [
+                "aaf6e259f965c04b"
+            ]
+        ]
+    },
+    {
+        "id": "f65c9eafc538ad05",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/p1/corriente",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 900,
+        "wires": [
+            [
+                "6afea1044ce08019"
+            ]
+        ]
+    },
+    {
+        "id": "31ea35a33fe04b4b",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/p1/potencia",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 980,
+        "wires": [
+            [
+                "10ddd4f89184084a"
+            ]
+        ]
+    },
+    {
+        "id": "ee82ceba9935a248",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/p1/consumo",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 1060,
+        "wires": [
+            [
+                "876a4495a799c777"
+            ]
+        ]
+    },
+    {
+        "id": "aaf6e259f965c04b",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion voltaje",
+        "func": "msg.payload = [\n    { voltaje: parseFloat(msg.payload) },\n    { id_nodo: \"nodo2_1\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 820,
+        "wires": [
+            [
+                "a342facaf0c8c6eb"
+            ]
+        ]
+    },
+    {
+        "id": "6afea1044ce08019",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion corriente",
+        "func": "msg.payload = [\n    { corriente: parseFloat(msg.payload) },\n    { id_nodo: \"nodo2_1\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 900,
+        "wires": [
+            [
+                "0c84a8eab1ad9331"
+            ]
+        ]
+    },
+    {
+        "id": "10ddd4f89184084a",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion potencia",
+        "func": "msg.payload = [\n    { potencia: parseFloat(msg.payload) },\n    { id_nodo: \"nodo2_1\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 980,
+        "wires": [
+            [
+                "30cea55bf5bd7fba"
+            ]
+        ]
+    },
+    {
+        "id": "876a4495a799c777",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion consumo",
+        "func": "msg.payload = [\n    { consumo: parseFloat(msg.payload) },\n    { id_nodo: \"nodo2_1\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 1060,
+        "wires": [
+            [
+                "fc6926d82a3894ea"
+            ]
+        ]
+    },
+    {
+        "id": "7fa870e44e9fbba4",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/p2/voltaje",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 920,
+        "y": 820,
+        "wires": [
+            [
+                "dc46f06989456ba5"
+            ]
+        ]
+    },
+    {
+        "id": "b4b108d6eb03871c",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/p2/corriente",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 900,
+        "wires": [
+            [
+                "09e77c92a3a04270"
+            ]
+        ]
+    },
+    {
+        "id": "394076d7fdc4ab04",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/p2/potencia",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 980,
+        "wires": [
+            [
+                "766d6d21e42d21a6"
+            ]
+        ]
+    },
+    {
+        "id": "2df907b076882d63",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/p2/consumo",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 1060,
+        "wires": [
+            [
+                "a0117fcffc82295c"
+            ]
+        ]
+    },
+    {
+        "id": "dc46f06989456ba5",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion voltaje",
+        "func": "msg.payload = [\n    { voltaje: parseFloat(msg.payload) },\n    { id_nodo: \"nodo2_2\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 820,
+        "wires": [
+            [
+                "766e44b528b548e0"
+            ]
+        ]
+    },
+    {
+        "id": "09e77c92a3a04270",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion corriente",
+        "func": "msg.payload = [\n    { corriente: parseFloat(msg.payload) },\n    { id_nodo: \"nodo2_2\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 900,
+        "wires": [
+            [
+                "94b6b98d233f85fb"
+            ]
+        ]
+    },
+    {
+        "id": "766d6d21e42d21a6",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion potencia",
+        "func": "msg.payload = [\n    { potencia: parseFloat(msg.payload) },\n    { id_nodo: \"nodo2_2\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 980,
+        "wires": [
+            [
+                "f3e6f4e3560373da"
+            ]
+        ]
+    },
+    {
+        "id": "a0117fcffc82295c",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion consumo",
+        "func": "msg.payload = [\n    { consumo: parseFloat(msg.payload) },\n    { id_nodo: \"nodo2_2\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 1060,
+        "wires": [
+            [
+                "05881b88e9473862"
+            ]
+        ]
+    },
+    {
+        "id": "a342facaf0c8c6eb",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "medidor_inteligente",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 640,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "0c84a8eab1ad9331",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "medidor_inteligente",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 640,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "30cea55bf5bd7fba",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "medidor_inteligente",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 640,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "fc6926d82a3894ea",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "medidor_inteligente",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 640,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "766e44b528b548e0",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "medidor_inteligente",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1420,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "94b6b98d233f85fb",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "medidor_inteligente",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1420,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "f3e6f4e3560373da",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "medidor_inteligente",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1420,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "05881b88e9473862",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "medidor_inteligente",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1420,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "060c3ff36b42691f",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "funcion consumoE total",
+        "func": "msg.payload = [\n    { consumoE_total: parseFloat(msg.payload) },\n    { id_nodo: \"nodo2\" }]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1160,
+        "wires": [
+            [
+                "eae4b1d8cf8cfeee"
+            ]
+        ]
+    },
+    {
+        "id": "eae4b1d8cf8cfeee",
+        "type": "influxdb out",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "measurement": "medidor_inteligente",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 700,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "a94303799396e309",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "On",
+        "payloadType": "str",
+        "x": 750,
+        "y": 3560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4cbc9dbca12a3958",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "On",
+        "payloadType": "str",
+        "x": 750,
+        "y": 3600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "93fef86cd71f88f2",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "On",
+        "payloadType": "str",
+        "x": 750,
+        "y": 3660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "50fe8163a2a9c722",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "On",
+        "payloadType": "str",
+        "x": 750,
+        "y": 3720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9804c59e839efdea",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/resetE/t1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 950,
+        "y": 3560,
+        "wires": []
+    },
+    {
+        "id": "37d06c92ef05ec02",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/resetE/t2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 950,
+        "y": 3600,
+        "wires": []
+    },
+    {
+        "id": "e2fb374499f20d7c",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/resetE/t1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 950,
+        "y": 3660,
+        "wires": []
+    },
+    {
+        "id": "be5193a8272763f5",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/resetE/t2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 950,
+        "y": 3720,
+        "wires": []
+    },
+    {
+        "id": "cac67a58c7255077",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "calendario/fecha/nodo1_1_t1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 1680,
+        "wires": [
+            [
+                "1b36b20dd3e96a7a"
+            ]
+        ]
+    },
+    {
+        "id": "1b36b20dd3e96a7a",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n1_1_t1",
+        "func": "var fecha_consulta = msg.payload;\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_diario\\\" FROM \\\"enchufes\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo1_1') AND time >= '\" + fecha_consulta + \"T00:00:00Z' AND time <= '\" + fecha_consulta + \"T23:59:59Z'\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1680,
+        "wires": [
+            [
+                "fea79e8a506d76a1"
+            ]
+        ]
+    },
+    {
+        "id": "fea79e8a506d76a1",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 660,
+        "y": 1680,
+        "wires": [
+            [
+                "d9b1b1a0b6ad0adf"
+            ]
+        ]
+    },
+    {
+        "id": "d9b1b1a0b6ad0adf",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n1_1_t1",
+        "func": "var valor_consumo_diario = msg.payload[0].consumo_diario;\nvalor_consumo_diario = parseFloat(valor_consumo_diario.toFixed(3));\nmsg.payload = valor_consumo_diario;\nreturn msg;//",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1680,
+        "wires": [
+            [
+                "8b27779afa41d290"
+            ]
+        ]
+    },
+    {
+        "id": "8b27779afa41d290",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "respuesta/consumoE_diario/nodo1_1_t1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1160,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "5a8cc4b6cb2c8554",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "calendario/fecha/nodo1_1_t2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 1780,
+        "wires": [
+            [
+                "6b5fcd0e0648451c"
+            ]
+        ]
+    },
+    {
+        "id": "6b5fcd0e0648451c",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n1_1_t2",
+        "func": "var fecha_consulta = msg.payload;\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_diario\\\" FROM \\\"enchufes\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo1_2') AND time >= '\" + fecha_consulta + \"T00:00:00Z' AND time <= '\" + fecha_consulta + \"T23:59:59Z'\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1780,
+        "wires": [
+            [
+                "eb04e77ae739a4b3"
+            ]
+        ]
+    },
+    {
+        "id": "eb04e77ae739a4b3",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 660,
+        "y": 1780,
+        "wires": [
+            [
+                "a3f7f4324b810b7c"
+            ]
+        ]
+    },
+    {
+        "id": "a3f7f4324b810b7c",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n1_1_t2",
+        "func": "var valor_consumo_diario = msg.payload[0].consumo_diario;\nvalor_consumo_diario = parseFloat(valor_consumo_diario.toFixed(3));\nmsg.payload = valor_consumo_diario;\nreturn msg;//",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1780,
+        "wires": [
+            [
+                "7d00229ec66784eb"
+            ]
+        ]
+    },
+    {
+        "id": "7d00229ec66784eb",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "respuesta/consumoE_diario/nodo1_1_t2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1160,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "42c69ab931e7d680",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "calendario/fecha/nodo1_2_t1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 1880,
+        "wires": [
+            [
+                "a7f83d589b4bd915"
+            ]
+        ]
+    },
+    {
+        "id": "a7f83d589b4bd915",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n1_2_t1",
+        "func": "var fecha_consulta = msg.payload;\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_diario\\\" FROM \\\"enchufes\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo1_3') AND time >= '\" + fecha_consulta + \"T00:00:00Z' AND time <= '\" + fecha_consulta + \"T23:59:59Z'\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1880,
+        "wires": [
+            [
+                "0800fb7555f5e95f"
+            ]
+        ]
+    },
+    {
+        "id": "0800fb7555f5e95f",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 660,
+        "y": 1880,
+        "wires": [
+            [
+                "95a1b24b608a7825"
+            ]
+        ]
+    },
+    {
+        "id": "95a1b24b608a7825",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n1_2_t1",
+        "func": "var valor_consumo_diario = msg.payload[0].consumo_diario;\nvalor_consumo_diario = parseFloat(valor_consumo_diario.toFixed(3));\nmsg.payload = valor_consumo_diario;\nreturn msg;//",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1880,
+        "wires": [
+            [
+                "4646a35595e1881f"
+            ]
+        ]
+    },
+    {
+        "id": "4646a35595e1881f",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "respuesta/consumoE_diario/nodo1_2_t1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1160,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "dc3586743e91090f",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "calendario/fecha/nodo1_2_t2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 1980,
+        "wires": [
+            [
+                "768470274e2b8e69"
+            ]
+        ]
+    },
+    {
+        "id": "768470274e2b8e69",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n1_2_t2",
+        "func": "var fecha_consulta = msg.payload;\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_diario\\\" FROM \\\"enchufes\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo1_4') AND time >= '\" + fecha_consulta + \"T00:00:00Z' AND time <= '\" + fecha_consulta + \"T23:59:59Z'\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1980,
+        "wires": [
+            [
+                "7ceb524b37045206"
+            ]
+        ]
+    },
+    {
+        "id": "7ceb524b37045206",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 660,
+        "y": 1980,
+        "wires": [
+            [
+                "d401ae59d576b984"
+            ]
+        ]
+    },
+    {
+        "id": "d401ae59d576b984",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n1_2_t2",
+        "func": "var valor_consumo_diario = msg.payload[0].consumo_diario;\nvalor_consumo_diario = parseFloat(valor_consumo_diario.toFixed(3));\nmsg.payload = valor_consumo_diario;\nreturn msg;//",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1980,
+        "wires": [
+            [
+                "f868563d2b9abb47"
+            ]
+        ]
+    },
+    {
+        "id": "f868563d2b9abb47",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "respuesta/consumoE_diario/nodo1_2_t2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1160,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "7ce195da749d01f4",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "calendario/fecha/nodo2_p1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 2100,
+        "wires": [
+            [
+                "a78d42a4772d3b59"
+            ]
+        ]
+    },
+    {
+        "id": "a78d42a4772d3b59",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n2_p1",
+        "func": "var fecha_consulta = msg.payload;\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_diario\\\" FROM \\\"medidor_inteligente\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo2_1') AND time >= '\" + fecha_consulta + \"T00:00:00Z' AND time <= '\" + fecha_consulta + \"T23:59:59Z'\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 2100,
+        "wires": [
+            [
+                "1643b8f101c1849a"
+            ]
+        ]
+    },
+    {
+        "id": "1643b8f101c1849a",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 680,
+        "y": 2100,
+        "wires": [
+            [
+                "eb0de58095948c62"
+            ]
+        ]
+    },
+    {
+        "id": "eb0de58095948c62",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n2_p1",
+        "func": "var valor_consumo_diario = msg.payload[0].consumo_diario;\nvalor_consumo_diario = parseFloat(valor_consumo_diario.toFixed(3));\nmsg.payload = valor_consumo_diario;\nreturn msg;//",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 2100,
+        "wires": [
+            [
+                "dd60e37bdc7fbb83"
+            ]
+        ]
+    },
+    {
+        "id": "dd60e37bdc7fbb83",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "respuesta/consumoE_diario/nodo2_p1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1170,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "dde95b637d119655",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "calendario/fecha/nodo2_p2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 2200,
+        "wires": [
+            [
+                "6df0ebec518681ca"
+            ]
+        ]
+    },
+    {
+        "id": "9d763a801dc49147",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 680,
+        "y": 2200,
+        "wires": [
+            [
+                "c4cbb27651aac71c"
+            ]
+        ]
+    },
+    {
+        "id": "c4cbb27651aac71c",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n2_p2",
+        "func": "var valor_consumo_diario = msg.payload[0].consumo_diario;\nvalor_consumo_diario = parseFloat(valor_consumo_diario.toFixed(3));\nmsg.payload = valor_consumo_diario;\nreturn msg;//",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 2200,
+        "wires": [
+            [
+                "ce9393683d514cb0"
+            ]
+        ]
+    },
+    {
+        "id": "ce9393683d514cb0",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "respuesta/consumoE_diario/nodo2_p2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1170,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "3092974408127f3a",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "calendario/fecha/nodo2_ce_total",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 2300,
+        "wires": [
+            [
+                "f9d522e4ed6e9c6c"
+            ]
+        ]
+    },
+    {
+        "id": "f9d522e4ed6e9c6c",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n2_ce_total",
+        "func": "var fecha_consulta = msg.payload;\n\nmsg.query = \"SELECT last(\\\"consumoE_total\\\") - first(\\\"consumoE_total\\\") AS \\\"consumo_diario\\\" FROM \\\"medidor_inteligente\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo2') AND time >= '\" + fecha_consulta + \"T00:00:00Z' AND time <= '\" + fecha_consulta + \"T23:59:59Z'\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 2300,
+        "wires": [
+            [
+                "f28ac11ca351b01e"
+            ]
+        ]
+    },
+    {
+        "id": "f28ac11ca351b01e",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 680,
+        "y": 2300,
+        "wires": [
+            [
+                "df68e3bdde7f8a63"
+            ]
+        ]
+    },
+    {
+        "id": "df68e3bdde7f8a63",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n2_ce_total",
+        "func": "var valor_consumo_diario = msg.payload[0].consumo_diario;\nvalor_consumo_diario = parseFloat(valor_consumo_diario.toFixed(3));\nmsg.payload = valor_consumo_diario;\nreturn msg;//",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 2300,
+        "wires": [
+            [
+                "aa2d1ad4bbb7a00f"
+            ]
+        ]
+    },
+    {
+        "id": "aa2d1ad4bbb7a00f",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "respuesta/consumoE_diario/nodo2_ce_total",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1190,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "6df0ebec518681ca",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n2_p2",
+        "func": "var fecha_consulta = msg.payload;\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_diario\\\" FROM \\\"medidor_inteligente\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo2_2') AND time >= '\" + fecha_consulta + \"T00:00:00Z' AND time <= '\" + fecha_consulta + \"T23:59:59Z'\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 2200,
+        "wires": [
+            [
+                "9d763a801dc49147"
+            ]
+        ]
+    },
+    {
+        "id": "a8743b8085f066e6",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "calendario/fecha/nodo2_cet_fechaI",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 2400,
+        "wires": [
+            [
+                "4c13e1363ec1adf6"
+            ]
+        ]
+    },
+    {
+        "id": "e45ae7e610a32a4e",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "calendario/fecha/nodo2_cet_fechaF",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 2460,
+        "wires": [
+            [
+                "4c13e1363ec1adf6"
+            ]
+        ]
+    },
+    {
+        "id": "4c13e1363ec1adf6",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n2_ce_total_rangos",
+        "func": "// Almacena los valores en el contexto del nodo\nif (msg.topic == \"calendario/fecha/nodo2_cet_fechaI\") {\n    context.set(\"fecha_consulta_ini\", msg.payload);\n}\n\nif (msg.topic == \"calendario/fecha/nodo2_cet_fechaF\") {\n    context.set(\"fecha_consulta_fin\", msg.payload);\n}\n\n// Recupera los valores almacenados\nvar fecha_consulta_ini = context.get(\"fecha_consulta_ini\");\nvar fecha_consulta_fin = context.get(\"fecha_consulta_fin\");\n\n\nmsg.query = \"SELECT last(\\\"consumoE_total\\\") - first(\\\"consumoE_total\\\") AS \\\"consumo_rango\\\" FROM \\\"medidor_inteligente\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo2') AND time >= '\" + fecha_consulta_ini + \"T00:00:00Z' AND time <= '\" + fecha_consulta_fin + \"T23:59:59Z'\"\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 2440,
+        "wires": [
+            [
+                "0338523dfcd52209"
+            ]
+        ]
+    },
+    {
+        "id": "0338523dfcd52209",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 720,
+        "y": 2440,
+        "wires": [
+            [
+                "376adb4f13af46ab"
+            ]
+        ]
+    },
+    {
+        "id": "376adb4f13af46ab",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n2_ce_total_rangos",
+        "func": "var consumo_rango = msg.payload[0].consumo_rango;\nconsumo_rango = parseFloat(consumo_rango.toFixed(3));\nmsg.payload = consumo_rango;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 2440,
+        "wires": [
+            [
+                "ae3410c665ef6d61"
+            ]
+        ]
+    },
+    {
+        "id": "ae3410c665ef6d61",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "respuesta/consumoE_rangos/nodo2_ce_total",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1270,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "67c3786f378dc670",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n2_ce_total_act",
+        "func": "// Calcula la fecha actual y solo toma el valor de la fecha\nvar fecha_actual = new Date().toISOString().split('T')[0];\n\n// Toma los 8 primeros caracteres (año y mes), e inicia el mes aumentando 01\nvar inicio_mes = fecha_actual.substring(0, 8) + '01'; \n\n// Genera el formato de la consulta con las fechas determinadas anteriormente\n\n\nmsg.query = \"SELECT last(\\\"consumoE_total\\\") - first(\\\"consumoE_total\\\") AS \\\"consumo_mes\\\" FROM \\\"medidor_inteligente\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo2') AND time >= '\" + inicio_mes + \"T00:00:00Z' AND time <= '\" + fecha_actual + \"T23:59:59Z'\"\n\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1300,
+        "wires": [
+            [
+                "2c0627c94ece9e43"
+            ]
+        ]
+    },
+    {
+        "id": "6213ed00294a47cf",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 1300,
+        "wires": [
+            [
+                "67c3786f378dc670"
+            ]
+        ]
+    },
+    {
+        "id": "2c0627c94ece9e43",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 640,
+        "y": 1300,
+        "wires": [
+            [
+                "05c7703567ab7870"
+            ]
+        ]
+    },
+    {
+        "id": "05c7703567ab7870",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n2_ce_total_act",
+        "func": "var consumo = msg.payload[0].consumo_mes;\nconsumo = parseFloat(consumo.toFixed(4));\nmsg.payload = consumo;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1300,
+        "wires": [
+            [
+                "09847ad169bb2291"
+            ]
+        ]
+    },
+    {
+        "id": "09847ad169bb2291",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/consumoe_total/mesActual",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1180,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "42db7a856aa44fe6",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n2_p1_ce_act",
+        "func": "var consumo = msg.payload[0].consumo_mes_f1;\nconsumo = parseFloat(consumo.toFixed(4));\nmsg.payload = consumo;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1420,
+        "wires": [
+            [
+                "181ad13f10c5ba8c"
+            ]
+        ]
+    },
+    {
+        "id": "47d130f744a9fe71",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n2_p1_ce_act",
+        "func": "// Consum Electrico Fase 1\n// Calcula la fecha actual y solo toma el valor de la fecha\nvar fecha_actual = new Date().toISOString().split('T')[0];\n\n// Toma los 8 primeros caracteres (año y mes), e inicia el mes aumentando 01\nvar inicio_mes = fecha_actual.substring(0, 8) + '01'; \n\n// Genera el formato de la consulta con las fechas determinadas anteriormente\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_mes_f1\\\" FROM \\\"medidor_inteligente\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo2_1') AND time >= '\" + inicio_mes + \"T00:00:00Z' AND time <= '\" + fecha_actual + \"T23:59:59Z'\"\n\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1420,
+        "wires": [
+            [
+                "ae69d6aa52d6fa1a"
+            ]
+        ]
+    },
+    {
+        "id": "4db301d4639f5bab",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 1420,
+        "wires": [
+            [
+                "47d130f744a9fe71"
+            ]
+        ]
+    },
+    {
+        "id": "ae69d6aa52d6fa1a",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 640,
+        "y": 1420,
+        "wires": [
+            [
+                "42db7a856aa44fe6"
+            ]
+        ]
+    },
+    {
+        "id": "181ad13f10c5ba8c",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/p1/consumoActual",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1150,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "8abf178f3b79e432",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n2_p2_ce_act",
+        "func": "var consumo = msg.payload[0].consumo_mes_f2;\nconsumo = parseFloat(consumo.toFixed(4));\nmsg.payload = consumo;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1540,
+        "wires": [
+            [
+                "4ae8e0160e2dd4da"
+            ]
+        ]
+    },
+    {
+        "id": "3d018d50c1233e8e",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n2_p2_ce_act",
+        "func": "// Consum Electrico Fase 2\n// Calcula la fecha actual y solo toma el valor de la fecha\nvar fecha_actual = new Date().toISOString().split('T')[0];\n\n// Toma los 8 primeros caracteres (año y mes), e inicia el mes aumentando 01\nvar inicio_mes = fecha_actual.substring(0, 8) + '01'; \n\n// Genera el formato de la consulta con las fechas determinadas anteriormente\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_mes_f2\\\" FROM \\\"medidor_inteligente\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo2_2') AND time >= '\" + inicio_mes + \"T00:00:00Z' AND time <= '\" + fecha_actual + \"T23:59:59Z'\"\n\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1540,
+        "wires": [
+            [
+                "6daf6c16be10ebd8"
+            ]
+        ]
+    },
+    {
+        "id": "21e71d844c90302d",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 1540,
+        "wires": [
+            [
+                "3d018d50c1233e8e"
+            ]
+        ]
+    },
+    {
+        "id": "6daf6c16be10ebd8",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 640,
+        "y": 1540,
+        "wires": [
+            [
+                "8abf178f3b79e432"
+            ]
+        ]
+    },
+    {
+        "id": "4ae8e0160e2dd4da",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/p2/consumoActual",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1150,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "5c1abc037fd17c6c",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10800",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "On",
+        "payloadType": "str",
+        "x": 190,
+        "y": 3560,
+        "wires": [
+            [
+                "6f85010862ac9019"
+            ]
+        ]
+    },
+    {
+        "id": "a94bc63d85918df5",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "05 10 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "On",
+        "payloadType": "str",
+        "x": 190,
+        "y": 3620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9b48a9607ea7ecd",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10800",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "On",
+        "payloadType": "str",
+        "x": 190,
+        "y": 3680,
+        "wires": [
+            [
+                "42c22b42489c2b27"
+            ]
+        ]
+    },
+    {
+        "id": "c9dd174c82301416",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "05 10 * * *",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "On",
+        "payloadType": "str",
+        "x": 190,
+        "y": 3740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f85010862ac9019",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t1/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 390,
+        "y": 3560,
+        "wires": []
+    },
+    {
+        "id": "9684840fda0ee92a",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t2/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 390,
+        "y": 3620,
+        "wires": []
+    },
+    {
+        "id": "42c22b42489c2b27",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t1/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 390,
+        "y": 3680,
+        "wires": []
+    },
+    {
+        "id": "975899fb2c2d4b2d",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t2/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 390,
+        "y": 3740,
+        "wires": []
+    },
+    {
+        "id": "a6dc36b6d843b647",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 3140,
+        "wires": [
+            [
+                "f1afc1db3b7f7661"
+            ]
+        ]
+    },
+    {
+        "id": "f1afc1db3b7f7661",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "reset_ce_n1_1_t1",
+        "func": "const dia_actual = new Date();\nif (dia_actual.getDate() === 1){\n    msg.payload = \"On\";\n    msg.topic = \"nodo1_1/resetE/t1\";\n    return msg;\n}\nreturn null;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 3140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "64384c60be547087",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/resetE/t1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 810,
+        "y": 3140,
+        "wires": []
+    },
+    {
+        "id": "45d6e96570f06b72",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 3220,
+        "wires": [
+            [
+                "4c5ce4a7158ba6b4"
+            ]
+        ]
+    },
+    {
+        "id": "4c5ce4a7158ba6b4",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "reset_ce_n1_1_t2",
+        "func": "const dia_actual = new Date();\nif (dia_actual.getDate() === 1){\n    msg.payload = \"On\";\n    msg.topic = \"nodo1_1/resetE/t2\";\n    return msg;\n}\nreturn null;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 3220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b7cfb3fb461435f",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 3300,
+        "wires": [
+            [
+                "22c6c92a089e9964"
+            ]
+        ]
+    },
+    {
+        "id": "22c6c92a089e9964",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "reset_ce_n1_2_t1",
+        "func": "const dia_actual = new Date();\nif (dia_actual.getDate() === 1){\n    msg.payload = \"On\";\n    msg.topic = \"nodo1_2/resetE/t1\";\n    return msg;\n}\nreturn null;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 3300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1780c323fd038370",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 3380,
+        "wires": [
+            [
+                "5f1ba85bc2868c6f"
+            ]
+        ]
+    },
+    {
+        "id": "5f1ba85bc2868c6f",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "reset_ce_n1_2_t2",
+        "func": "const dia_actual = new Date();\nif (dia_actual.getDate() === 1){\n    msg.payload = \"On\";\n    msg.topic = \"nodo1_2/resetE/t2\";\n    return msg;\n}\nreturn null;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 3380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ff4c630323b210d7",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/resetE/t2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 810,
+        "y": 3220,
+        "wires": []
+    },
+    {
+        "id": "9c07d720cc856ba9",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/resetE/t1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 810,
+        "y": 3300,
+        "wires": []
+    },
+    {
+        "id": "232fd4c107c0e117",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/resetE/t2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 810,
+        "y": 3380,
+        "wires": []
+    },
+    {
+        "id": "8693fdfd69dc9343",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/estado",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 3020,
+        "wires": [
+            [
+                "802e09065ff3d080"
+            ]
+        ]
+    },
+    {
+        "id": "410205d368bcc417",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t1/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 710,
+        "y": 2980,
+        "wires": []
+    },
+    {
+        "id": "802e09065ff3d080",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "function 1",
+        "func": "if (msg.payload === \"On\") {\n    return [msg, msg];\n} else if (msg.payload === \"Off\") {\n    return [msg, msg];\n} else {\n    return [null, null];\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 3020,
+        "wires": [
+            [
+                "410205d368bcc417"
+            ]
+        ]
+    },
+    {
+        "id": "e7d4a68abd374a2d",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_2/t2/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 710,
+        "y": 3040,
+        "wires": []
+    },
+    {
+        "id": "433f7184d64f1310",
+        "type": "mqtt in",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/estado",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "35f196f555013c78",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 2900,
+        "wires": [
+            [
+                "19964455614b639c"
+            ]
+        ]
+    },
+    {
+        "id": "91b097b0a9c9aed2",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t1/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 710,
+        "y": 2860,
+        "wires": []
+    },
+    {
+        "id": "19964455614b639c",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "function 2",
+        "func": "if (msg.payload === \"On\") {\n    return [msg, msg];\n} else if (msg.payload === \"Off\") {\n    return [msg, msg];\n} else {\n    return [null, null];\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 2900,
+        "wires": [
+            [
+                "91b097b0a9c9aed2"
+            ]
+        ]
+    },
+    {
+        "id": "f2ae3fa4e709446c",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1_1/t2/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 710,
+        "y": 2920,
+        "wires": []
+    },
+    {
+        "id": "60618358f8691d65",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n1_t1_ce_act",
+        "func": "var consumo = msg.payload[0].consumo_mes_e1;\nconsumo = parseFloat(consumo.toFixed(4));\nmsg.payload = consumo;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 2560,
+        "wires": [
+            [
+                "0e9c0f2e0bb5422a"
+            ]
+        ]
+    },
+    {
+        "id": "f91ac83e7298a690",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n1_t1_ce_act",
+        "func": "// Consum Electrico Equipo 1\n// Calcula la fecha actual y solo toma el valor de la fecha\nvar fecha_actual = new Date().toISOString().split('T')[0];\n\n// Toma los 8 primeros caracteres (año y mes), e inicia el mes aumentando 01\nvar inicio_mes = fecha_actual.substring(0, 8) + '01'; \n\n// Genera el formato de la consulta con las fechas determinadas anteriormente\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_mes_e1\\\" FROM \\\"enchufes\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo1_1') AND time >= '\" + inicio_mes + \"T00:00:00Z' AND time <= '\" + fecha_actual + \"T23:59:59Z'\"\n\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 2560,
+        "wires": [
+            [
+                "a73b82c84d0594c5"
+            ]
+        ]
+    },
+    {
+        "id": "76cb676e93914bb7",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 2560,
+        "wires": [
+            [
+                "f91ac83e7298a690"
+            ]
+        ]
+    },
+    {
+        "id": "a73b82c84d0594c5",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 720,
+        "y": 2560,
+        "wires": [
+            [
+                "60618358f8691d65"
+            ]
+        ]
+    },
+    {
+        "id": "0e9c0f2e0bb5422a",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1/t1/consumoEActual",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1230,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "bb720572eca0c912",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n1_t1_ce_act",
+        "func": "var consumo = msg.payload[0].consumo_mes_e2;\nconsumo = parseFloat(consumo.toFixed(4));\nmsg.payload = consumo;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 2620,
+        "wires": [
+            [
+                "10c6faecea5cb94e"
+            ]
+        ]
+    },
+    {
+        "id": "4408847486b9f3ee",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n1_t2_ce_act",
+        "func": "// Consum Electrico Equipo 2\n// Calcula la fecha actual y solo toma el valor de la fecha\nvar fecha_actual = new Date().toISOString().split('T')[0];\n\n// Toma los 8 primeros caracteres (año y mes), e inicia el mes aumentando 01\nvar inicio_mes = fecha_actual.substring(0, 8) + '01'; \n\n// Genera el formato de la consulta con las fechas determinadas anteriormente\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_mes_e2\\\" FROM \\\"enchufes\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo1_2') AND time >= '\" + inicio_mes + \"T00:00:00Z' AND time <= '\" + fecha_actual + \"T23:59:59Z'\"\n\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 2620,
+        "wires": [
+            [
+                "8961fbdf88cc2637"
+            ]
+        ]
+    },
+    {
+        "id": "65720ffc67253935",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 2620,
+        "wires": [
+            [
+                "4408847486b9f3ee"
+            ]
+        ]
+    },
+    {
+        "id": "8961fbdf88cc2637",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 720,
+        "y": 2620,
+        "wires": [
+            [
+                "bb720572eca0c912"
+            ]
+        ]
+    },
+    {
+        "id": "10c6faecea5cb94e",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo1/t2/consumoEActual",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1230,
+        "y": 2620,
+        "wires": []
+    },
+    {
+        "id": "ee44074dbb9f5969",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n1_t1_ce_act",
+        "func": "var consumo = msg.payload[0].consumo_mes_e3;\nconsumo = parseFloat(consumo.toFixed(4));\nmsg.payload = consumo;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 2680,
+        "wires": [
+            [
+                "2a206f047d86f387"
+            ]
+        ]
+    },
+    {
+        "id": "c884dafb18a621ad",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n2_t1_ce_act",
+        "func": "// Consum Electrico Equipo 1\n// Calcula la fecha actual y solo toma el valor de la fecha\nvar fecha_actual = new Date().toISOString().split('T')[0];\n\n// Toma los 8 primeros caracteres (año y mes), e inicia el mes aumentando 01\nvar inicio_mes = fecha_actual.substring(0, 8) + '01'; \n\n// Genera el formato de la consulta con las fechas determinadas anteriormente\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_mes_e3\\\" FROM \\\"enchufes\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo1_3') AND time >= '\" + inicio_mes + \"T00:00:00Z' AND time <= '\" + fecha_actual + \"T23:59:59Z'\"\n\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 2680,
+        "wires": [
+            [
+                "debb6580c83c01b7"
+            ]
+        ]
+    },
+    {
+        "id": "6b5386142faedeb7",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 2680,
+        "wires": [
+            [
+                "c884dafb18a621ad"
+            ]
+        ]
+    },
+    {
+        "id": "debb6580c83c01b7",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 720,
+        "y": 2680,
+        "wires": [
+            [
+                "ee44074dbb9f5969"
+            ]
+        ]
+    },
+    {
+        "id": "2a206f047d86f387",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/t1/consumoEActual",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1230,
+        "y": 2680,
+        "wires": []
+    },
+    {
+        "id": "cf05de63c3da83e8",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "respuesta n1_t1_ce_act",
+        "func": "var consumo = msg.payload[0].consumo_mes_e4;\nconsumo = parseFloat(consumo.toFixed(4));\nmsg.payload = consumo;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 2740,
+        "wires": [
+            [
+                "d9c21281e5265667"
+            ]
+        ]
+    },
+    {
+        "id": "4fef9350b96aaf3e",
+        "type": "function",
+        "z": "d17f046cca3de775",
+        "name": "consulta n2_t2_ce_act",
+        "func": "// Consum Electrico Equipo 1\n// Calcula la fecha actual y solo toma el valor de la fecha\nvar fecha_actual = new Date().toISOString().split('T')[0];\n\n// Toma los 8 primeros caracteres (año y mes), e inicia el mes aumentando 01\nvar inicio_mes = fecha_actual.substring(0, 8) + '01'; \n\n// Genera el formato de la consulta con las fechas determinadas anteriormente\n\nmsg.query = \"SELECT last(\\\"consumo\\\") - first(\\\"consumo\\\") AS \\\"consumo_mes_e4\\\" FROM \\\"enchufes\\\" WHERE (\\\"id_nodo\\\"::tag = 'nodo1_4') AND time >= '\" + inicio_mes + \"T00:00:00Z' AND time <= '\" + fecha_actual + \"T23:59:59Z'\"\n\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 2740,
+        "wires": [
+            [
+                "fd9465b7ed8b2cfc"
+            ]
+        ]
+    },
+    {
+        "id": "165e61348d47a302",
+        "type": "inject",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 2740,
+        "wires": [
+            [
+                "4fef9350b96aaf3e"
+            ]
+        ]
+    },
+    {
+        "id": "fd9465b7ed8b2cfc",
+        "type": "influxdb in",
+        "z": "d17f046cca3de775",
+        "influxdb": "19f10e544f620954",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 720,
+        "y": 2740,
+        "wires": [
+            [
+                "cf05de63c3da83e8"
+            ]
+        ]
+    },
+    {
+        "id": "d9c21281e5265667",
+        "type": "mqtt out",
+        "z": "d17f046cca3de775",
+        "name": "",
+        "topic": "nodo2/t2/consumoEActual",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "35f196f555013c78",
+        "x": 1230,
+        "y": 2740,
+        "wires": []
+    },
+    {
+        "id": "35f196f555013c78",
+        "type": "mqtt-broker",
+        "name": "Broker",
+        "broker": "18.191.11.210",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "19f10e544f620954",
+        "type": "influxdb",
+        "hostname": "18.191.11.210",
+        "port": "8086",
+        "protocol": "http",
+        "database": "smart_grid_home",
+        "name": "InfluxDB",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "timeout": "10",
+        "rejectUnauthorized": true
+    }
+]
