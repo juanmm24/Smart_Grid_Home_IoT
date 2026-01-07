@@ -1,0 +1,17 @@
+*** Instance Resources for AWS *** 
+
+The instance in Amazon Web Services that hosts the services of: 
+Mosquitto MQTT, InfluxDB, Home Assistant and Node-RED, 
+must contain the following requirements:
+
+-- Operative System --
+* Debian 12 (x86_64) 
+-- Instance Type --
+* t3. medium (2 vCPU and 4 GiB Memory)
+-- RAM Memory --
+* 4 GiB Memory
+-- Storage --
+* 40 GiB
+
+
+
