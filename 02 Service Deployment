@@ -1,0 +1,76 @@
+
+*** Service Deployment ****
+The AWS instance consists of the following services: Mosquitto MQTT, InfluxDB, Node-RED and Home Assistant. 
+This file presents the necessary steps for the installation of such services.
+
+- Requirements: SSH access to the instance (Use Putty)
+
+---- Mosquitto MQTT Broker ----
+
+* Mosquitto Broker and Mosquitto Clients Installation 
+sudo apt update && sudo apt upgrade -y
+sudo apt install mosquitto mosquitto-clients 
+
+* Create a password file and add users:
+sudo mosquitto_passwd -c /etc/mosquitto/passwd <user_name>
+sudo chown mosquitto:mosquitto /etc/mosquitto/passwd 
+sudo chmod 640 /etc/mosquitto/passwd
+
+* Broker Configuration TLS 
+nano /etc/mosquitto/config/mosquitto.conf
+- Add following:
+listener 8883
+allow_anonymous false
+password_file /etc/mosquitto/passwd
+
+---- InfluxDB Dababase ----
+
+* Download the InfluxData repository key
+sudo wget -q https://repos.influxdata.com/influxdata-archive_compat.key
+
+* Verify the key and install it:
+sudo echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdata-archive_compat.key' | sha256sum -c && cat influxdata-archive_compat.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg > /dev/null
+
+* Add the InfluxData repository:
+sudo echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https://repos.influxdata.com/debian stable main' | sudo tee /etc/apt/sources.list.d/influxdata.list
+
+* Update package lists and install InfluxDB:
+sudo sudo apt-get update && sudo apt-get install influxdb
+
+* Start and Enable InfluxDB Service
+
+sudo sudo service influxdb start
+systemctl unmask influxdb
+systemctl enable influxdb
+systemctl start influxdb
+systemctl status influxdb
+
+---- NodeRED ----
+
+* Install curl (required for NVM installation):
+sudo apt install curl -y
+
+* Install NVM (Node Version Manager):
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+source ~/.bashrc
+
+* Install Node.js (16.14.0 is required)
+nvm install 16.14.0
+node -v
+
+* Install npm
+sudo apt-get install npm -y
+npm -v
+
+* Install Node-RED and Node-RED Admin globally:
+sudo npm install -g --unsafe-perm node-red node-red-admin
+
+---- Home Assistant ----
+
+Home Assistant requires the isntalacion of the "Supervised" version. 
+The following link presents the official installation documentation. 
+Follow the steps covered in the tutorial
+
+https://github.com/home-assistant/supervised-installer
+
+
