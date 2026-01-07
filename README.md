@@ -28,3 +28,15 @@ To access them:
 1. Download all parts and place them in the same folder.
 
 2. Open only the file smart_grid_home_parted.7z.001 using 7-Zip; the remaining parts will automatically merge during extraction.
+
+
+************************ Important **************************
+To replicate the project, the repository contains all the necessary documents step by step. 
+In this sense, the order of the documents to be followed is as follows:
+
+1. 01 AWS Instance Recuses
+2. 02 Service Deployment
+3. 03 Upload Configuration Files
+4. 04 System Installation Guide.pdf
+
+Each document has all the necessary information for the deployment, configuration and installation of the system
