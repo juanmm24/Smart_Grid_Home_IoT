@@ -19,7 +19,7 @@ The instance in Amazon Web Services should be created according to the following
 
 
 Note: Once the instance is created, it's time to install the Mosquitto MQTT, InfluxDB, Node-RED and Home Assistant services. 
-      This process is described in the file "02 Service Deployment.main"
+      This process is described in the file "02 Service Deployment"
 
 
 
