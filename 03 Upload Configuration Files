@@ -1,0 +1,55 @@
+
+Note: This file presents the integration of the configuration files.yaml, automations.yaml and the Flow of NodeRed. 
+      These files, create the sensors and MQTT switches, to obtain the data sent by the nodes, such as sending the remote management instructions. 
+      On the other hand, the Node-Red Flow is responsible for subscribing to the node topics, processing the data to give the structure of (tag/field) and storing the data to InfluxDB.
+
+
+Previous Step: Install the "File Editor" Tool from the Home Assistant interface
+
+
+
+
+---- Home Assistant "configuration.yaml" File -----
+
+In the file "configuration.yaml " the different sensors, mqtt switches, etc. are created. 
+Configuration of the file.Home Assistant's yaml does not use a traditional programming language
+like Python or JavaScript, but is written in YAML (YAML Ain't Markup Language).
+
+Example of an MQTT sensor definition:
+** MQTT sensor ** 
+sensor:
+  - platform: mqtt
+    name: "Living Room Temperature"
+    state_topic: "home/livingroom/temperature"
+    unit_of_measurement: "°C"
+
+1) Copy the code from the "configuration.yaml" located in the "Code_HomeAssistant_Configuration" folder. 
+2) Restart Home Assistant to apply the changes.
+3) Verify the subscription and publish of messages
+
+
+
+
+---- Home Assistant "configuration.yaml" File -----
+
+Automations are created in Home Assistant via the UI, but are stored in a YAML format. 
+If you want to edit the YAML of an automation, select the automation, click on the menu 
+button in the top right then on Edit in YAML.
+
+1) Copy the code from the "automations.yaml" located in the "Code_HomeAssistant_Automations" folder. 
+2) Restart Home Assistant to apply the changes.
+3) Check automations such as power rating alerts, timers, etc.
+
+**** For more information about the configurations and automations visit the following official links of Home Assistant ****
+Sensors:
+https://www.home-assistant.io/integrations/sensor.mqtt/
+
+Automation:
+https://www.home-assistant.io/docs/automation/yaml/
+
+
+
+
+----- NodeRed Flow Import ----
+
+1) In the Node-RED Interface, upload the file containing the Stream blocks (File in the "Flow_NodeRED" Folder)
